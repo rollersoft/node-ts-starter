@@ -1,0 +1,50 @@
+{
+  "name": "express-ts-boilerplate",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev:api": "cross-env NODE_ENV=development ts-node-dev ./src/index.ts",
+    "lint": "eslint --fix src/**/*.{js,ts}",
+    "build": "cross-env NODE_ENV=production tsc",
+    "start": "ts-node dist/index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lodash": "latest",
+    "moment": "^2.29.1",
+    "morgan": "~1.9.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2",
+    "@types/node": "^14.14.22",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prefer-arrow-functions": "^3.0.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "ts-node-dev": "^1.0.0-pre.52",
+    "typescript": "^3.9.7"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
